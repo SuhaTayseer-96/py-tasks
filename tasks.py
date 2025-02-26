@@ -97,9 +97,39 @@ houses = {
 }
 
 sorted_houses = sorted(houses.items(), key=lambda x: x[1], reverse=True)
-print(f"\nYour house is: {sorted_houses[0][0]}! 🏰")
+print(f"\nYour house is: {sorted_houses[0][0]}!")
 
+-------------------------
+print('BANK OF CODÉDEX')
 
+pin = int(input('Enter your PIN: '))
+
+while pin != 1234:
+  pin = int(input('Incorrect PIN. Enter your PIN again: '))
+
+if pin == 1234:
+  print('PIN accepted!')
+
+------------------------
+
+guess = 0
+tries = 0
+
+while guess != 6 and tries < 3:
+    guess = int(input("Guess the num: "))
+    tries += 1 
+
+    if guess == 6:
+        print("You got it!")
+        break  
+    elif tries == 1:
+        print("You have only 2 tries left.")
+    elif tries == 2:
+        print("You have only 1 try left.")
+    elif tries == 3:
+        print("You used all your tries.")
+    else:
+      print("Lost")
 -------------------------
 
 
