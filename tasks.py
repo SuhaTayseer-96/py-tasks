@@ -132,4 +132,8 @@ while guess != 6 and tries < 3:
       print("Lost")
 -------------------------
 
+for i in range(99, 0, -1):
+  print(f'{i} Bottles of Beer')
+
+------------------------
 
