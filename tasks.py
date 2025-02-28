@@ -136,4 +136,14 @@ for i in range(99, 0, -1):
   print(f'{i} Bottles of Beer')
 
 ------------------------
+for num in range(1, 100):
+  if num % 3 == 0 or num % 5 ==0:
+    print("FizzBuzz")
+  elif num % 5 ==0:
+    print("Buzz")
+  elif num % 3 ==0:
+    print("Fizz")
+  else:
+    print("IDK")
+    -------------------------
 
